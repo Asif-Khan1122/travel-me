@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ASSET_BASE } from "@/lib/assets";
 import "./Testimonials.css";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const testimonials = [
   {
@@ -91,7 +90,9 @@ export default function Testimonials() {
               aria-label='Previous testimonial'
               className='testimonial-arrow w-11 h-11 rounded-full bg-white shadow flex items-center justify-center hover:bg-primary hover:text-white transition-colors'
             >
-              <FiChevronLeft aria-hidden='true' id='arrows' />
+              <svg viewBox='0 0 24 24' aria-hidden='true'>
+                <path d='m14.5 5-7 7 7 7' />
+              </svg>
             </button>
             <div className='testimonial-dots' aria-label='Choose testimonial'>
               {testimonials.map((testimonial, index) => (
@@ -110,7 +111,9 @@ export default function Testimonials() {
               aria-label='Next testimonial'
               className='testimonial-arrow w-11 h-11 rounded-full bg-white shadow flex items-center justify-center hover:bg-primary hover:text-white transition-colors'
             >
-              <FiChevronRight id='arrows' />
+              <svg viewBox='0 0 24 24' aria-hidden='true'>
+                <path d='m9.5 5 7 7-7 7' />
+              </svg>
             </button>
           </div>
         </div>
