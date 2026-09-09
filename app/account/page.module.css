@@ -1,0 +1,122 @@
+.container {
+  min-height: 100vh;
+  padding: 32px 20px;
+  background: #fffaf5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto 56px;
+}
+
+.logo {
+  color: #df6951;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.back {
+  color: #6b7280;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: #df6951;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #df6951;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: #1b1b1b;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: -0.05em;
+}
+
+.subtitle {
+  margin: 14px 0 34px;
+  color: #6b7280;
+}
+
+.card {
+  max-width: 580px;
+  padding: 28px;
+  border: 1px solid rgba(27, 27, 27, 0.06);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(27, 27, 27, 0.08);
+}
+
+.label {
+  margin: 0 0 8px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.email {
+  margin: 0 0 28px;
+  color: #1b1b1b;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.logout {
+  min-width: 132px;
+  height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 10px;
+  background: #1b1b1b;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.logout:hover {
+  background: #df6951;
+  transform: translateY(-1px);
+}
+
+.logout:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.logoutError {
+  margin: 12px 0 0;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+}
